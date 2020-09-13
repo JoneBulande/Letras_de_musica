@@ -75,6 +75,9 @@ button:hover{
 	margin: 0 auto;
 	max-width: 380px;
 }
+#letra.ativo{
+	text-align: center;
+}
 
 /****************************************************************/
 /* MOBILE  VERSION */

@@ -13,7 +13,8 @@ btn.addEventListener('click', el =>{
 
 async function pesquisar(){
 	if (musica.value !== 0 && musica.value !== '') {
-		const letra = document.querySelector('#letra');	
+		const letra = document.querySelector('#letra');
+		letra.classList.add('ativo');
 		letra.innerHTML =
 
 		`
@@ -42,6 +43,7 @@ async function pesquisar(){
 			try{
 				const letrasResponse = await encotrarLetra(artista.value, musica.value);
 				const data = await letrasResponse.json();
+				letra.classList.remove('ativo');
 				letra.innerText = data.lyrics;
 			} catch (err){
 				console.log(err)
