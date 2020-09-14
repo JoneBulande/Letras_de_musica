@@ -12,7 +12,7 @@ btn.addEventListener('click', el =>{
 });
 
 async function pesquisar(){
-	if (musica.value !== 0 && musica.value !== '') {
+	if (musica.value !== 0 && musica.value !== '' && artista.value !== 0 && artista.value !== '') {
 		const letra = document.querySelector('#letra');
 		letra.classList.add('ativo');
 		letra.innerHTML =
